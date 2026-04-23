@@ -2,7 +2,7 @@
 
 Date: 2026-04-23  
 Host context: `yschoe@hp`  
-Working area: `~/backup/jrchung-hdd`
+Working area: `~/backup/username-hdd`
 
 ## Objective
 

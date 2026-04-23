@@ -5,7 +5,7 @@ set -u
 # It prompts before each action and lets you skip steps.
 
 DEVICE="${DEVICE:-/dev/sdd}"
-WORKDIR="${WORKDIR:-$HOME/backup/jrchung-hdd/recovery-sdd}"
+WORKDIR="${WORKDIR:-$HOME/backup/username-hdd/recovery-sdd}"
 CLIPPED_IMG="${CLIPPED_IMG:-sdd-clipped.img}"
 CLIPPED_LOG="${CLIPPED_LOG:-sdd-clipped.log}"
 WORK_IMG="${WORK_IMG:-sdd-work.img}"
@@ -14,7 +14,7 @@ TARGET_BYTES="${TARGET_BYTES:-$((TARGET_SECTORS*512))}"
 VG_NAME="${VG_NAME:-vg_amygdala}"
 LV_NAME="${LV_NAME:-lv_root}"
 MOUNTPOINT="${MOUNTPOINT:-/mnt/amygdala}"
-RECOVERY_OUT="${RECOVERY_OUT:-$HOME/backup/jrchung-hdd/recovered-amygdala}"
+RECOVERY_OUT="${RECOVERY_OUT:-$HOME/backup/username-hdd/recovered-amygdala}"
 LOOPDEV_FILE="${LOOPDEV_FILE:-$WORKDIR/.loopdev}"
 
 CLIPPED_PATH="$WORKDIR/$CLIPPED_IMG"

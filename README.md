@@ -1,5 +1,9 @@
 # sdd-image-recovery
 
+## Start Here
+
+Manual step-by-step guide: **[tutorial.md](tutorial.md)**
+
 Interactive, prompt-driven recovery helper for a clipped/truncated LVM disk workflow (`/dev/sdd` case).
 
 This project focuses on safe, repeatable recovery:
@@ -23,6 +27,7 @@ This script avoids that failure mode by:
 ## Repository Contents
 
 - `sdd_image_recovery.sh`: Main interactive recovery script.
+- `tutorial.md`: Manual, no-script recovery walkthrough.
 - `log.md`: Detailed session and troubleshooting history.
 
 ## Requirements
@@ -76,7 +81,7 @@ If `sdd-clipped.img` already exists, skip imaging steps by answering `n` for `dd
 
 ```bash
 DEVICE=/dev/sdd \
-WORKDIR=$HOME/backup/jrchung-hdd/recovery-sdd \
+WORKDIR=$HOME/backup/username-hdd/recovery-sdd \
 TARGET_SECTORS=156301488 \
 VG_NAME=vg_amygdala \
 LV_NAME=lv_root \
@@ -86,7 +91,7 @@ LV_NAME=lv_root \
 ## Configuration Variables
 
 - `DEVICE` (default: `/dev/sdd`)
-- `WORKDIR` (default: `$HOME/backup/jrchung-hdd/recovery-sdd`)
+- `WORKDIR` (default: `$HOME/backup/username-hdd/recovery-sdd`)
 - `CLIPPED_IMG` (default: `sdd-clipped.img`)
 - `CLIPPED_LOG` (default: `sdd-clipped.log`)
 - `WORK_IMG` (default: `sdd-work.img`)
@@ -95,7 +100,7 @@ LV_NAME=lv_root \
 - `VG_NAME` (default: `vg_amygdala`)
 - `LV_NAME` (default: `lv_root`)
 - `MOUNTPOINT` (default: `/mnt/amygdala`)
-- `RECOVERY_OUT` (default: `$HOME/backup/jrchung-hdd/recovered-amygdala`)
+- `RECOVERY_OUT` (default: `$HOME/backup/username-hdd/recovered-amygdala`)
 
 ## Troubleshooting
 
